@@ -1,14 +1,14 @@
 <div class="fashionHero-section">
-    <img src="{{ asset('storage/hero/hero.png') }}" 
+    <img src="{{ asset('storage/hero/hero.jpg') }}" 
          alt="Hero Banner" 
          class="fashionHero-image">
 
-    <div class="fashionHero-content">
-        <h2 class="fashionHero-title">{{ $title ?? 'One Jacket , Endless Looks            ' }}</h2>
-        <p style="color: white; font-size: 20px;">Bangladesh’s First Design Changeable Jacket .         </p>
+    <div class="fashionHero-content fade-up">
+        <h2 class="fashionHero-title">{{ $title ?? 'Walk Free. Walk Stylish.' }}</h2>
+        <p style="color: white; font-size: 20px;">Step into comfort and style with our premium everyday sliders.</p>
       
 
-        <div class="d-flex tpproduct-details__cart justify-content-center"><button>  <a href="{{ route('public.products') }}">Winter Collection 25/26</a></button></div>
+        <div class="d-flex tpproduct-details__cart justify-content-center"><button>  <a href="{{ route('public.products') }}" class="d-flex gap-2 align-items-center ">Browse Trending Slider <img style="width: 20px; height: 20px;" src="{{ asset('storage/logo/arrowicon.webp') }}" alt=""> </a></button></div>
     </div>
 </div>
 
@@ -62,4 +62,23 @@
             width: 70vw;
         }
     }
+    .fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 1.2s ease-out forwards;
+    width: 100%;
+    position: absolute;
+    margin-left: -48vw;
+}
+
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 </style>

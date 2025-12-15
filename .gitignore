@@ -9,7 +9,6 @@ Thumbs.db
 .env
 .env.backup
 /.idea
-/.vscode
 /.vagrant
 Homestead.json
 Homestead.yaml
@@ -27,6 +26,7 @@ __MACOSX
 public/vendor/core
 
 _ide_helper.php
+temp_auto_push.bat
 yarn.lock
 bun.lockb
 /.sass-cache
@@ -55,3 +55,5 @@ storage/framework/laravel-excel/
 .phpactor.json
 
 storage/framework/maintenance.php
+.gitignore
+temp_interactive_push.bat
