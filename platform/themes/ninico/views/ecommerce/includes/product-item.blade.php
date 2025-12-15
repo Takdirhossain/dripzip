@@ -26,7 +26,7 @@
         </a>
         @if (EcommerceHelper::isCompareEnabled() || theme_option('enable_quick_view', 'yes') === 'yes' || EcommerceHelper::isWishlistEnabled())
             <div class="tpproduct__thumb-action">
-                @if (EcommerceHelper::isCompareEnabled())
+                <!-- @if (EcommerceHelper::isCompareEnabled())
                     <a
                         class="add-to-compare"
                         href="#"
@@ -34,15 +34,15 @@
                         data-url="{{ route('public.compare.add', $product->getKey()) }}"
                     ><i class="fal fa-exchange"></i>
                     </a>
-                @endif
-                @if (theme_option('enable_quick_view', 'yes') === 'yes')
+                @endif -->
+                <!-- @if (theme_option('enable_quick_view', 'yes') === 'yes')
                     <a class="quickview" href="#" data-url="{{ route('public.ajax.quick-view', $product->id) }}"><i class="fal fa-eye"></i></a>
                 @endif
                 @if (EcommerceHelper::isWishlistEnabled())
                     <a class="wishlist add-to-wishlist" href="#"
                        title="{{ __('Add to wishlist') }}"
                        data-url="{{ route('public.wishlist.add', $product->getKey()) }}"><i class="fal fa-heart"></i></a>
-                @endif
+                @endif -->
             @endif
         </div>
     </div>

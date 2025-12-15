@@ -21,11 +21,10 @@ $footerColor = Theme::get('footerColor');
                                 <a href="{{ BaseHelper::getHomepageUrl() }}">
                                     {!! Theme::getLogoImage([], 'logo', 35) !!}
                                 </a>
-                                <ul class="mt-10 ">
-                                    <li>
-                                        <a href="">We create premium customizable denim jackets where every design is flexible — you choose the artwork, text, colors, and style, and we bring your imagination to life. </a>
-                                    </li>
-                                </ul>
+                                <p class="text-align-justify" style="text-align: justify;">
+                                Explore our exclusive men’s and women’s collection—where comfort meets style.
+                                Upgrade your wardrobe with quality pieces that boost your everyday confidence.
+                                </p>
 
                             </div>
                         </div>
@@ -47,8 +46,8 @@ $footerColor = Theme::get('footerColor');
                       </ul>
                     </div> -->
 
-                    <div class="col-12 col-lg-4 d-flex justify-content-end" style="padding-left: 50px;">
-                        <img style="width: 200px; height: 200px;" src="{{ asset('storage/hero/qrcode.png') }}"
+                    <div class="col-12 col-lg-4 d-flex justify-content-center  md:justify-content-end" style="padding-left: 50px;">
+                        <img style="width: 150px; height: 200px;" src="{{ asset('storage/logo/qrcode.png') }}"
                             alt="Hero Banner"
                             class="fashionHero-image">
 
