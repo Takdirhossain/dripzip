@@ -9,7 +9,6 @@ Thumbs.db
 .env
 .env.backup
 /.idea
-/.vscode
 /.vagrant
 Homestead.json
 Homestead.yaml

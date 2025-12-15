@@ -51,7 +51,7 @@
     </div>
 </div>
 
-<div @if(theme_option('sticky_header_mobile_enabled', 'yes') == 'yes') id="header-mob-sticky" @endif @class(['tp-md-lg-header d-md-none pt-20 pb-20', $headerMobileStickyClass ?? null])>
+<div @if(theme_option('sticky_header_mobile_enabled', 'yes') == 'yes') id="header-mob-sticky" @endif @class(['tp-md-lg-header d-md-none', $headerMobileStickyClass ?? null])>
     <div class="container">
         <div class="row align-items-center">
             <div class="col-3 d-flex align-items-center">
